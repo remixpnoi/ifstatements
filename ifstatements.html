@@ -1,0 +1,73 @@
+
+<html><head><title>If statements</title>
+</head>
+<body>
+<h2>Which state are you purchasing from?</h2>
+<ol>
+<li>NYC - 8.875%</li>
+<li>NJ - 7%</li>
+<li>Outlets - 4%</li>
+<li>CT - 6.35%</li>
+<li>Philly - 6.34%</li>
+</ol>
+
+
+
+<script type="text/javascript">
+	var amount= prompt("How much did you purchase?");
+	document.write("I purchased $200.00 " + amount + "in goods");
+
+	var sel = prompt("What state did you buy it from?");
+	
+	document.write("<br />My selection is " + sel);
+	
+	if (sel == 1)
+	{
+		document.write(", NYC, the tax amount is $");
+		document.write((amount*.08775).toFixed(2));
+	}
+	else if (sel == 2)
+	{
+		document.write(", NJ, the tax amount is $");
+		document.write((amount*0.07).toFixed(2));
+	}
+	else if (sel == 3){
+		document.write(", Outlet, the tax amount is $");
+		document.write((amount*0.04).toFixed(2));
+		
+	}
+	
+	else if (sel == 4){
+		document.write(", CT, the tax amount is $");
+		document.write((amount*6.65).toFixed(2));
+	}
+	
+	
+	else if (sel == 5){
+		document.write(", Philly, the tax amount is $");
+		document.write((amount*0.08).toFixed(2));
+	}
+		
+	
+	else
+	{
+		document.write("Please pick a valid number");
+	}
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
